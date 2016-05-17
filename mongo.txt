@@ -1,0 +1,20 @@
+Arxan	阿尔山市	Inner Mongolia	Hinggan	1996-06-10
+Baotou	包头市	Inner Mongolia	direct administration	1950-02-13
+Bayannur	巴彦淖尔市	Inner Mongolia	direct administration	2003-12-01
+Chifeng	赤峰市	Inner Mongolia	direct administration	1983-10-10
+Erenhot	二连浩特市	Inner Mongolia	Xilingol	1966-01-18
+Ergun	额尔古纳市	Inner Mongolia	Hulunbuir	1994-07-13
+Fengzhen	丰镇市	Inner Mongolia	Ulanqab	1990-11-15
+Genhe	根河市	Inner Mongolia	Hulunbuir	1994-04-28
+Hohhot	呼和浩特市	Inner Mongolia	direct administration	1950-01-18
+Holingol	霍林郭勒市	Inner Mongolia	Tongliao	1985-11-09
+Hulunbuir	呼伦贝尔市	Inner Mongolia	direct administration	2001-10-10
+Manzhouli	满洲里市	Inner Mongolia	Hulunbuir	1954-05-21
+Ordos	鄂尔多斯市	Inner Mongolia	direct administration	2001-02-26
+Tongliao	通辽市	Inner Mongolia	direct administration	1999-01-13
+Ulanhot	乌兰浩特市	Inner Mongolia	Hinggan	1980-07-26
+Ulanqab	乌兰察布市	Inner Mongolia	direct administration	2003-12-01
+Wuhai	乌海市	Inner Mongolia	direct administration	1975-08-30
+Xilinhot	锡林浩特市	Inner Mongolia	Xilingol	1983-10-10
+Yakeshi	牙克石市	Inner Mongolia	Hulunbuir	1983-10-10
+Zhalantun	扎兰屯市	Inner Mongolia
