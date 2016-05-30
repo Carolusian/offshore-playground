@@ -41,21 +41,17 @@ id_prov <- id_prov %>% select (id, prov_cn, prov_en)
 # you can borrow plyr package in a more efficient way
 cnmapdf <- plyr::join(fortify(cnmap), id_prov, by = "id")
 
-df.addr <- read.csv("AddressCNFinal.csv")
-df.addr <- df.addr[df.addr$province!="", ]
-df.addr <- count(df.addr, "province")
-df.addr$prov_en <- df.addr$province
-
+df.addr <- read.csv('province_addr_count.csv')
 
 map2df <- cnmapdf %>%
     plyr::join(df.addr, by = "prov_en") %>%
     mutate(freq = as.numeric(freq))
 
 map2df$brks <- cut(map2df$freq,
-                   breaks=c(0, 100, 300, 1000, 2000, 3000, 4500),
-                   labels=c('1-100', '100-300', '300-1000', '1000-2000', '2000-3000', '3000-4500'))
+                   breaks=c(0, 100, 300, 1000, 2000, 3000, 4500, 25000),
+                   labels=c('1-100', '100-300', '300-1000', '1000-2000', '2000-3000', '3000-4500', '>4500'))
 
-cbbPalette <- c('#efcdcd', '#eab0ac', '#e5948b', '#e0786a', '#db5c49', '#d64029')
+cbbPalette <- c('#efcdcd', '#e9b6b3', '#e3a099', '#dd8980', '#d77366', '#d15d4c', '#bf1a00')
 
 
 map <- map2df                                                              %>%
@@ -64,3 +60,4 @@ map <- map2df                                                              %>%
   # scale_fill_gradient(low="#ffffff", high="red") +
   scale_fill_manual(values=cbbPalette) +
   coord_map("polyconic")
+
